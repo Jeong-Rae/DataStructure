@@ -9,7 +9,7 @@ int main(void) {
 	int *p1, *p2;
 
 	//메모리 동적 할당
-	scanf_s("%d", &N);
+	scanf("%d", &N);
 	p1 = (int*)malloc(N * sizeof(int));
 	if (p1 == NULL) {
 		printf("memory allocation error\n");
@@ -38,5 +38,5 @@ int main(void) {
 	free(p2);
 
 	return 0;
-
+	
 }

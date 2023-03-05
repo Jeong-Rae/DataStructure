@@ -34,4 +34,5 @@ int main(void){
     printf("%d %d %d",t3.hour,t3.minute,t3.second);
 
     return 0;
+    
 }
