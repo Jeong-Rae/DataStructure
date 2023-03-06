@@ -8,8 +8,11 @@ int sum(int n){
 }
 
 int main(void){
-    int x=4;
+    int x;
     int total=0;
+    //x입력받기
+    scanf("%d",&x);
+
     for(int i=1; i<=x; i++){
         total=total+sum(i);
     }

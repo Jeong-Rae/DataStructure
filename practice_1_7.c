@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#pragma warning(disable:6031)
-#pragma warning(disable:6385)
 
 
 int main(void) {
@@ -23,10 +21,10 @@ int main(void) {
 
 	//배열 입력 받기
 	for (int i = 0; i < N; i++) {
-		scanf_s("%d", &p1[i]);
+		scanf("%d", &p1[i]);
 	}
 	for (int i = 0; i < N; i++) {
-		scanf_s("%d", &p2[i]);
+		scanf("%d", &p2[i]);
 	}
 	
 	//출력

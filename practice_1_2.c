@@ -17,20 +17,18 @@ void ABC(int arr[], int k){//selection sort
 }
 
 int main(void){
-    int numArr[10] = {1,3,5,7,9,2,4,6,8,10};
+    int numArr[10];
 
-    printf("before sortng: ");
+    //배열입력받기
     for(int i=0; i<10; i++){
-        printf("%d ", numArr[i]);
+        scanf("%d", &numArr[i]);
     }
-
     for (int i=0; i<10; i++){//ABC 반복 호출
         ABC(numArr,i);
     }
-
-    printf("\nafter sortng: ");
+    printf("\n");
     for(int i=0; i<10; i++){
-        printf("%d ", numArr[i]);
+        printf(" %d", numArr[i]);
     }
     
     return 0;

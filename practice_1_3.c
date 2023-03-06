@@ -14,8 +14,9 @@ int main(void){
     }
     
     //a,b 입력받기
-    a=2;
-    b=4;
+    
+    scanf("%d %d",&a,&b);
+    
     //swap하기
     swap(&numArr[a],&numArr[b]);
 
@@ -27,7 +28,7 @@ int main(void){
     return 0;
     
 }
-
+//스왑함수
 void swap(int *pa,int *pb){
     int temp;
 
