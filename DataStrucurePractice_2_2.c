@@ -1,12 +1,29 @@
 #include <stdio.h>
 
-int mostOnes(A, n);
+int mostOnes(int A[][100], int n)
+{
+  int raw;
+  int x = 0, y = 0;
+  while (x != n && y != n)
+  {
+    if (A[y][x] == 1)
+    {
+      x++;
+      raw = y;
+    }
+    else
+    {
+      y++;
+    }
+  }
+  return raw;
+}
 
 int main(void)
 {
   int n;
+  int bit_matrix[100][100];
   scanf("%d", &n);
-  int bit_matrix[n][n];
 
   for (int i = 0; i < n; i++)
   {
@@ -16,11 +33,7 @@ int main(void)
     }
   }
 
-  return 0;
-}
+  printf("%d", mostOnes(bit_matrix, n));
 
-int mostOnes(int A[][], int n)
-{
-  int raw;
-  int x = 0, y = 0;
+  return 0;
 }
